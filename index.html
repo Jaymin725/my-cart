@@ -12,12 +12,39 @@
 
 <body>
   <!-- Header -->
-  <header class="py-4 bg-gradient-to-b from-indigo-500 to-indigo-400 shadow-lg">
-    <div class="container flex justify-between items-center mx-auto">
+  <header class="mb-4 py-4 bg-gradient-to-b from-indigo-500 to-indigo-400 shadow-lg">
+    <div class="container flex justify-between items-center mx-auto px-8">
       <h1 class="text-3xl text-white font-bold">My Cart</h1>
-      <a href="" class="px-4 py-1 text-xl text-indigo-500 font-semibold bg-white rounded-full">Cart</a>
+      <a href="" class="ps-3 pe-1 py-1 text-xl text-indigo-500 font-semibold bg-white rounded-full">
+        Cart
+        <span class="inline-block px-2 text-white bg-indigo-500 rounded-full">9</span>
+      </a>
     </div>
   </header>
+  <!-- Main -->
+  <main class="container mx-auto px-8">
+    <!-- Products Title -->
+    <h2 class="mb-3 pb-2 text-2xl text-transparent font-bold border-b-2 bg-clip-text bg-gradient-to-b from-indigo-500 to-indigo-400 shadow-xl">Products</h2>
+    <!-- Products Body -->
+    <div class="">
+      <!-- Card -->
+      <div class="group/card relative w-1/4 p-2 aspect-square overflow-hidden border-2 rounded-xl shadow-lg">
+        <!-- Card Media -->
+        <div class="w-full h-full overflow-hidden rounded-md">
+          <img class="group-hover/card:brightness-75 w-full h-full object-cover object-center transition-all duration-500" src="https://i.pinimg.com/564x/63/b6/33/63b6331d21033db512e1960b04a2e94c.jpg" alt="">
+        </div>
+        <!-- Card Body -->
+        <div class="group-hover/card:bottom-0 absolute -bottom-full left-0 mt-2 border transition-all duration-300">
+          <!-- Product Name -->
+          <h3 class="">Camera</h3>
+          <!-- Product Price -->
+          <p class="">
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
