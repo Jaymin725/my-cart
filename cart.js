@@ -6,6 +6,7 @@ if (cart == null) {
 
 const cart_list = document.getElementById("cart-list");
 const cart_count = document.getElementById("cart-count");
+const total = document.getElementById("total");
 
 cart_count.textContent = cart.length;
 
@@ -32,9 +33,12 @@ function decQty(index) {
 }
 
 function printCart() {
+  let sum = 0;
   cart_list.innerHTML = "";
 
   cart.forEach((item, index) => {
+    sum += (item.product.price * item.qty);
+    
     cart_list.innerHTML += `<tr>
     <td>
       <div class="flex items-center gap-4">
@@ -65,6 +69,8 @@ function printCart() {
     </td>
   </tr>`;
   });
+
+  total.textContent = `$${sum}`;
 }
 
 printCart();
