@@ -26,8 +26,8 @@ let cart = JSON.parse(localStorage.getItem("cart"));
 const product_list = document.getElementById("product-list");
 const cart_count = document.getElementById("cart-count");
 
-//
 product_list.innerHTML = "";
+cart_count.textContent = cart.length;
 
 if (cart == null) {
   cart = [];
