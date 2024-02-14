@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" contnet="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>My Cart | Cart</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="mb-4 py-4 bg-gradient-to-b from-indigo-500 to-indigo-400 shadow-lg shadow-indigo-300">
+    <div class="container flex justify-between items-center mx-auto px-8">
+      <h1 class="text-3xl text-white font-bold"><a href="index.html">My Cart</a></h1>
+      <a href="cart.html" class="ps-3 pe-1 py-1 text-xl text-indigo-500 font-semibold bg-white rounded-full">
+        Cart
+        <span id="cart-count" class="inline-block px-2 text-white bg-indigo-500 rounded-full">0</span>
+      </a>
+    </div>
+  </header>
+  <!-- Main -->
+  <main class="container mx-auto px-8">
+    <!-- Cart Title -->
+    <h2 class="mb-3 pb-2 text-2xl text-indigo-500 font-bold border-b-2">
+      Cart</h2>
+    <!-- Cart Body -->
+    <table class="w-full">
+      <thead class="border-b-2">
+        <tr class="*:pb-1">
+          <th class="text-left">Product</th>
+          <th>Qty</th>
+          <th class="text-right">Price</th>
+        </tr>
+      </thead>
+      <tbody id="cart-list" class="divide-y">
+        <tr>
+          <td>
+            <div class="flex items-center gap-4">
+              <img class="w-24 aspect-square object-cover object-center border-2 rounded-xl"
+              src="https://i.pinimg.com/564x/63/b6/33/63b6331d21033db512e1960b04a2e94c.jpg" alt="">
+              <span>Name</span>
+            </div>
+          </td>
+          <td>
+            <div class="flex justify-center items-center">
+              <div class="*:flex *:justify-center *:items-center *:w-8 *:aspect-square flex overflow-hidden border-2 divide-x-2 rounded-xl">
+                <button class="group hover:bg-indigo-500 transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="group-hover:fill-white w-5 h-5 transition">
+                    <path fill-rule="evenodd" d="M4 10a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H4.75A.75.75 0 0 1 4 10Z" clip-rule="evenodd" />
+                  </svg>                  
+                </button>
+                <span>0</span>
+                <button class="group hover:bg-indigo-500 transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="group-hover:fill-white w-5 h-5 transition">
+                    <path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" />
+                  </svg>                  
+                </button>
+              </div>
+            </div>
+          </td>
+          <td class="text-right">
+            <span>$99.99</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <script src="cart.js"></script>
+</body>
+
+</html>

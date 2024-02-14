@@ -34,7 +34,8 @@ if (cart == null) {
 }
 
 function addToCart(index) {
-  if (cart.some((item) => item.id == index)) {
+  if (cart.some(item => item.id == index)) {
+    index = cart.findIndex(item => item.id == index);
     cart[index].qty++;
   } else {
     cart.push({ id: index, product: products[index], qty: 1 });
