@@ -27,11 +27,12 @@ const product_list = document.getElementById("product-list");
 const cart_count = document.getElementById("cart-count");
 
 product_list.innerHTML = "";
-cart_count.textContent = cart.length;
 
 if (cart == null) {
   cart = [];
 }
+
+cart_count.textContent = cart.length;
 
 function addToCart(index) {
   if (cart.some(item => item.id == index)) {
